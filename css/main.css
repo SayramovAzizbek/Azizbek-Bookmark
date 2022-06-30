@@ -136,7 +136,6 @@ body {
 /* Start Hero Section */
 #hero {
   margin-top: 50px;
-  /* padding: 276px 0; */
   background-image: url('../images/hero-bg.svg');
   background-repeat: no-repeat;
   background-position: calc(50% + 655px) calc(50% + 0px);
@@ -246,7 +245,7 @@ body {
   list-style: none;
 }
 
-.dowload-list__item {
+.download-list__item {
   width: 280px;
   padding: 49px 24px 24px 24px;
   overflow: hidden;
@@ -256,19 +255,19 @@ body {
   text-align: center;
 }
 
-.dowload-list__item:not(:last-child) {
+.download-list__item:not(:last-child) {
   margin-right: 34px;
 }
 
-.dowload-list__item:nth-child(2) {
+.download-list__item:nth-child(2) {
   margin-top: 40px;
 }
 
-.dowload-list__item:nth-child(3) {
+.download-list__item:nth-child(3) {
   margin-top: 80px;
 }
 
-.dowload-list__item::before {
+.download-list__item::before {
   content: '';
   display: block;
   width: 102px;
@@ -279,11 +278,11 @@ body {
   background-size: contain;
 }
 
-.dowload-list__item:nth-child(2)::before {
+.download-list__item:nth-child(2)::before {
   background-image: url('../images/firefox.svg');
 }
 
-.dowload-list__item:nth-child(3)::before {
+.download-list__item:nth-child(3)::before {
   background-image: url('../images/opera.svg');
 }
 
