@@ -91,6 +91,7 @@ body {
 .site-nav__list {
   display: flex;
   align-items: center;
+  padding: 0;
   list-style: none;
 }
 
@@ -241,6 +242,7 @@ body {
   align-items: center;
   width: 911px;
   margin: 48px auto 0 auto;
+  padding: 0;
   list-style: none;
 }
 
