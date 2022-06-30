@@ -1,0 +1,340 @@
+/* Variables */
+:root {
+  --main-text-color1: #5267DF;
+  --main-text-color2: #FA5959;
+  --main-text-color3: #242A45;
+  --main-text-color4: #9194A2;
+}
+
+/* rubik-regular - latin */
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/rubik-v20-latin-regular.woff2') format('woff2'),
+    url('../fonts/rubik-v20-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/rubik-v20-latin-500.woff2') format('woff2'),
+    url('../fonts/rubik-v20-latin-500.woff') format('woff');
+}
+
+/* General */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Container */
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Sticky-Footer */
+.site-main {
+  flex-grow: 1;
+}
+
+/* Start Header Section */
+#site-header {
+  padding: 48px 0;
+}
+
+.header-part {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.site-nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.site-nav__item {
+  margin-right: 44px;
+}
+
+.site-nav__link,
+.header-login-link {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  color: var(--main-text-color3);
+  text-decoration: none;
+  transition: .5s;
+}
+
+.site-nav__link:hover {
+  color: var(--main-text-color2);
+}
+
+.header-login-link {
+  padding: 12px 34px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background: var(--main-text-color2);
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.header-login-link:hover {
+  color: var(--main-text-color2);
+  background: #FFFFFF;
+  border: 2px solid var(--main-text-color2);
+  box-shadow: 0px 8px 8px -4px #495dcf33;
+}
+
+/* End of Header Section */
+
+/* Start Hero Section */
+#hero {
+  margin-top: 50px;
+  /* padding: 276px 0; */
+  background-image: url('../images/hero-bg.svg');
+  background-repeat: no-repeat;
+  background-position: calc(50% + 655px) calc(50% + 0px);
+  background-size: contain;
+}
+
+.hero-part {
+  width: 540px;
+  padding: 137px 0 137px 0;
+}
+
+.hero-part__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.15px;
+  color: var(--main-text-color3);
+}
+
+.hero-part__text {
+  margin: 24px 0 32px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--main-text-color3);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.hero-part__chrome,
+.hero-part__firefox {
+  display: inline-block;
+  padding: 10px 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+  background-color: var(--main-text-color1);
+  box-shadow: 0px 8px 8px -4px #495dcf33;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.hero-part__chrome:hover,
+.download-list-link:hover {
+  background-color: #fff;
+  color: var(--main-text-color1);
+  border: 2px solid var(--main-text-color1);
+}
+
+.hero-part__firefox {
+  margin-left: 15px;
+  color: var(--main-text-color3);
+  mix-blend-mode: normal;
+  background-color: #F7F7F7;
+  opacity: 0.75;
+}
+
+.hero-part__firefox:hover {
+  background-color: #fff;
+  color: #5B6074;
+  border: 2px solid #5B6074;
+}
+
+/* End of Hero Section */
+
+/* Start Download Section */
+#download {
+  padding: 149px 0;
+}
+
+.section-info {
+  width: 540px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-info__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  letter-spacing: -0.1px;
+  color: var(--main-text-color3);
+}
+
+.section-info__text {
+  margin: 16px 0 0 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--main-text-color3);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.download-list {
+  display: flex;
+  align-items: center;
+  width: 911px;
+  margin: 48px auto 0 auto;
+  list-style: none;
+}
+
+.dowload-list__item {
+  width: 280px;
+  padding: 49px 24px 24px 24px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 20px -5px #495dcf33;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.dowload-list__item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.dowload-list__item:nth-child(2) {
+  margin-top: 40px;
+}
+
+.dowload-list__item:nth-child(3) {
+  margin-top: 80px;
+}
+
+.dowload-list__item::before {
+  content: '';
+  display: block;
+  width: 102px;
+  height: 100px;
+  margin: 0 auto;
+  background-image: url('../images/chrome.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.dowload-list__item:nth-child(2)::before {
+  background-image: url('../images/firefox.svg');
+}
+
+.dowload-list__item:nth-child(3)::before {
+  background-image: url('../images/opera.svg');
+}
+
+.download-list__img {
+  margin: 0 auto;
+}
+
+.download-list__title {
+  margin: 32px 0 6px 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: var(--main-text-color3);
+}
+
+.download-list__paragraph {
+  position: relative;
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--main-text-color3);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.download-list__paragraph::after {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: -26px;
+  width: 281px;
+  height: 6px;
+  background-image: url('../images/border.svg');
+  background-repeat: no-repeat;
+}
+
+.download-list-link {
+  display: inline-block;
+  margin-top: 55px;
+  padding: 10px 27px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #FFFFFF;
+  background-color: var(--main-text-color1);
+  box-shadow: 0px 8px 8px -4px #495dcf33;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: .5s;
+}
+
+/* End of Download Section */
