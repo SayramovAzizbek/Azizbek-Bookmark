@@ -1,3 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Variables */
 :root {
   --main-text-color1: #5267DF;
@@ -491,16 +505,31 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding: 19px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--main-text-color3);
   list-style: none;
   -webkit-transition: color .5s;
   -o-transition: color .5s;
   transition: color .5s;
   cursor: pointer;
-  padding: 19px 0;
 }
 
 .question-part__box-title:hover {
   color: var(--main-text-color2);
+}
+
+.question-part__box-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: var(--main-text-color3);
+  mix-blend-mode: normal;
+  opacity: 0.75;
 }
 
 .question-part__svg-img {
@@ -551,6 +580,7 @@ body {
 }
 
 .contact-part__text {
+  margin: 0;
   font-weight: 500;
   font-size: 13px;
   line-height: 40px;
@@ -558,6 +588,7 @@ body {
 }
 
 .contact-part__title {
+  margin: 24px 0 36px 0;
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
@@ -767,7 +798,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-left: 64px;
-  padding:0;
+  padding: 0;
   list-style: none;
 }
 
