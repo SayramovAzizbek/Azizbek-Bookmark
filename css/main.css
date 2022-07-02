@@ -269,9 +269,15 @@ body {
 
 .feature-part__feature-item {
   width: 243px;
+  border-bottom: 4px solid transparent;
+}
+
+.feature-part__feature-item--active {
+  border-bottom: 4px solid var(--main-text-color2);
 }
 
 .feature-part__btn {
+  display: inline-block;
   width: 243px;
   padding: 0 40px 27px 40px;
   font-weight: 400;
@@ -288,19 +294,25 @@ body {
   -o-transition: color .5s;
   transition: color .5s;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .feature-part__btn:hover {
   color: var(--main-text-color2);
 }
 
-.btn-active {
+/* .btn-active {
   border-bottom: 4px solid var(--main-text-color2);
-}
+} */
 
 .bookmark-main {
+  display: none;
   position: relative;
   margin-top: 72px;
+}
+
+.bookmark-wrapper--active .bookmark-main{
+  display: block;
 }
 
 .bookmark-main::before {
@@ -315,14 +327,17 @@ body {
   background-size: contain;
 }
 
-.bookmark-main:nth-child(2)::before {
+.bookmark-click::before {
+  background-image: url('../images/bookmark-bg.svg');
+}
+
+.bookmark--itelligent::before {
   background-image: url('../images/intelligent-bg.svg');
 }
 
-.bookmark-main:nth-child(3)::before {
+.bookmark--sharing::before {
   background-image: url('../images/sharing-bg.svg');
 }
-
 
 .bookmark-main__info {
   width: 445px;

@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bookmark</title>
   <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="./css/main.css"> -->
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 
 <body>
@@ -61,7 +61,7 @@
       </div>
     </section>
     <!-- End of Hero Section -->
-
+    
     <!-- Start Feature Section -->
     <section id="feature">
       <div class="container">
@@ -73,46 +73,54 @@
             </p>
           </div>
           <ul class="feature-part__feature-list">
-            <li class="feature-part__feature-item btn-active">
-              <button class="feature-part__btn" type="button">Simple Bookmarking</button>
+            <li class="feature-part__feature-item feature-part__feature-item--active">
+              <a href="#bookmarkClick" class="feature-part__btn">Simple Bookmarking</a>
             </li>
             <li class="feature-part__feature-item">
-              <button class="feature-part__btn" type="button">Speedy Searching</button>
+              <a href="#bookmarkIntelligent" class="feature-part__btn">Speedy Searching</a>
             </li>
             <li class="feature-part__feature-item">
-              <button class="feature-part__btn" type="button">Easy Sharing</button>
+              <a href="#bookmarkShare" class="feature-part__btn">Easy Sharing</a>
             </li>
           </ul>
           <div class="bookmark-box">
-            <div class="bookmark-main bookmark-On">
-              <div class="bookmark-main__info">
-                <h2 class="bookmark-main__title">
-                  Bookmark in one click
-                </h2>
-                <p class="bookmark-main__text">Organize your bookmarks however you like. Our simple drag-and-drop
-                  interface gives you complete control over how you manage your favourite sites.</p>
-                <a class="bookmark-main__link" href="#">More Info</a>
+            <div class="bookmark-wrapper bookmark-wrapper--active" id="bookmarkClick">
+              <div class="bookmark-main bookmark-click">
+                <div class="bookmark-main__info">
+                  <h2 class="bookmark-main__title">
+                    Bookmark in one click
+                  </h2>
+                  <p class="bookmark-main__text">Organize your bookmarks however you like. Our simple drag-and-drop
+                    interface gives you complete control over how you manage your favourite sites.</p>
+                  <a class="bookmark-main__link" href="#">More Info</a>
+                </div>
               </div>
             </div>
-            <!-- <div class="bookmark-main intelligent-On">
-              <div class="bookmark-main__info">
-                <h2 class="bookmark-main__title">
-                  Intelligent search
-                </h2>
-                <p class="bookmark-main__text">Our powerful search feature will help you find saved sites in no time at
-                  all. No need to trawl through all of your bookmarks.</p>
-                <a class="bookmark-main__link" href="#">More Info</a>
+            <div class="bookmark-wrapper" id="bookmarkIntelligent">
+              <div class="bookmark-main bookmark--itelligent">
+                <div class="bookmark-main__info">
+                  <h2 class="bookmark-main__title">
+                    Intelligent search
+                  </h2>
+                  <p class="bookmark-main__text">Our powerful search feature will help you find saved sites in no time
+                    at
+                    all. No need to trawl through all of your bookmarks.</p>
+                  <a class="bookmark-main__link" href="#">More Info</a>
+                </div>
               </div>
-            </div> -->
-            <!-- <div class="bookmark-main sharing-On">
-              <div class="bookmark-main__info">
-                <h2 class="bookmark-main__title">
-                  Share your bookmarks
-                </h2>
-                <p class="bookmark-main__text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-                <a class="bookmark-main__link" href="#">More Info</a>
+            </div>
+            <div class="bookmark-wrapper" id="bookmarkShare">
+              <div class="bookmark-main bookmark--sharing">
+                <div class="bookmark-main__info">
+                  <h2 class="bookmark-main__title">
+                    Share your bookmarks
+                  </h2>
+                  <p class="bookmark-main__text">Easily share your bookmarks and collections with others. Create a
+                    shareable link that you can send at the click of a button.</p>
+                  <a class="bookmark-main__link" href="#">More Info</a>
+                </div>
               </div>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -295,6 +303,7 @@
   </footer>
   <!-- End of Footer Section-->
 
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
